@@ -4,7 +4,7 @@ import icon from "./icon";
 
 const MakerPosition = ({ address }) => {
   const position = useMemo(() => {
-    return [address.location.lat, address.location.lng];
+    return [address?.location?.lat, address?.location?.lng];
   }, [address.location.lat, address.location.lng]);
   const map = useMap();
 

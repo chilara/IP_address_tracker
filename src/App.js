@@ -222,7 +222,7 @@ function App() {
               </Box>
 
               <MapContainer
-                center={[address.location.lat, address.location.lng]}
+                center={[address?.location?.lat, address?.location?.lng]}
                 zoom={13}
                 scrollWheelZoom={true}
                 style={{ height: "600px", weight: "100vh" }}
