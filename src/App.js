@@ -220,7 +220,6 @@ function App() {
                   </Box>
                 </Flex>
               </Box>
-
               <MapContainer
                 center={[address?.location?.lat, address?.location?.lng]}
                 zoom={13}
