@@ -69,7 +69,7 @@ function App() {
             <Image
               src={backgroundDS}
               alt=""
-              width={"100%"}
+              width={"100vw"}
               height={"20rem"}
               objectFit={"cover"}
             />
@@ -120,7 +120,7 @@ function App() {
               <Box
                 mx={{ lg: "auto", base: "2rem" }}
                 maxWidth={"7xl"}
-                mb={"-4rem"}
+                mb={{ lg: "-4rem", base: "-17rem" }}
                 zIndex={"10000"}
                 position={"relative"}
                 bgColor={"#fff"}
@@ -129,7 +129,7 @@ function App() {
                 boxShadow={"0px 10px 15px -3px rgba(0, 0, 0, 0.1)"}
               >
                 <Flex
-                  gap={"3rem"}
+                  gap={{ lg: "3rem", base: "2rem" }}
                   justifyContent={"space-around"}
                   alignItems={"flex-start"}
                   flexDir={{ lg: "row", base: "column" }}
@@ -224,7 +224,7 @@ function App() {
                 center={[address?.location?.lat, address?.location?.lng]}
                 zoom={13}
                 scrollWheelZoom={true}
-                style={{ height: "600px", weight: "100vh" }}
+                style={{ height: "100vh", width: "100vw" }}
               >
                 <TileLayer
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
